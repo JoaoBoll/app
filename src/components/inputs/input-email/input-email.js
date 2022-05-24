@@ -1,4 +1,5 @@
 import {Col, Input, InputGroup, InputGroupText, Label, Row } from 'reactstrap'
+import {HiOutlineAtSymbol} from 'react-icons/hi'
 
 function InputEmail(model) {
 
@@ -8,7 +9,7 @@ function InputEmail(model) {
                 <Label>{model.label}</Label>
                 <InputGroup>
                     <InputGroupText>
-                    @
+                        <HiOutlineAtSymbol/>
                     </InputGroupText>
                     <Input type="text" name={model.name} placeholder={model.placeholder} value={model.value} onChange={(e)=>model.onChange(e.target.value)}/>
                 </InputGroup>
