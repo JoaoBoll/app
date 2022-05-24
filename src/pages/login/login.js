@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {Row, Col, Label} from 'reactstrap';
+import {Row, Col, Label, Button} from 'reactstrap';
 
 import './login.css';
 import InputEmail from '../../components/inputs/input-email/input-email.js';
@@ -24,6 +24,15 @@ function Login() {
                 <Row className='mt-3'>
                     <Col sm='12'>
                         <InputPassword value={senha} name='senha' onChange={setSenha} label='Senha:'/>
+                    </Col>
+                </Row>
+                <Row className='mt-3'>
+                    <Col sm='12' className='text-center'>
+                        <Button 
+                        color="primary" className='login-button'
+                        >
+                            Entrar
+                        </Button>
                     </Col>
                 </Row>
             </div>

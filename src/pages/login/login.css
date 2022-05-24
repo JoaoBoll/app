@@ -25,3 +25,8 @@
 #large{
     width: 310px;
 }
+
+.login-button{
+    width: 150px;
+    font-size: 110%;
+}
